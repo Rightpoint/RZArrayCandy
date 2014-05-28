@@ -33,6 +33,16 @@
     return [NSArray arrayWithArray:filtered];
 }
 
+- (id)rz_reduce:(RZFCArrayReduceBlock)block initial:(id)initial
+{
+    NSParameterAssert(block);
+    __block id accumulator = initial;
+    [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+       accumulator = block( accumulator, obj, idx, self );
+    }];
+    return accumulator;
+}
+
 - (NSArray *)rz_reversed
 {
     return [[self reverseObjectEnumerator] allObjects];

@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 
 typedef id   (^RZFCArrayObjBlock)(id obj, NSUInteger idx, NSArray *array);
+typedef id   (^RZFCArrayReduceBlock)(id prev, id current, NSUInteger idx, NSArray *array);
 typedef BOOL (^RZFCArrayBooleanBlock)(id obj, NSUInteger idx, NSArray *array);
 
 @interface NSArray (RZFunctionalContainers)
@@ -23,6 +24,26 @@ typedef BOOL (^RZFCArrayBooleanBlock)(id obj, NSUInteger idx, NSArray *array);
  *  @return A new array contining the result of performing the block on each object.
  */
 - (NSArray *)rz_map:(RZFCArrayObjBlock)block;
+
+/**
+ *  Reduce the objects in an array to a single value.
+ *
+ *  @param block   Block that performs the reduction operation.
+ *                     @c prev
+ *                     The result from the previous invocation of the block, or the initial
+ *                     value if this is the first invocation.
+ *                     @c current
+ *                     The object at the current index of the array.
+ *                     @c idx
+ *                     The current index of the array.
+ *                     @c array
+ *                     The original array.
+ *
+ *  @param initial Initial value for the reduce operation, or nil.
+ *
+ *  @return Result from performing the reduce operation on all objects in the array.
+ */
+- (id)rz_reduce:(RZFCArrayReduceBlock)block initial:(id)initial;
 
 /**
  *  Returns a filtered version of the array as filtered by the block

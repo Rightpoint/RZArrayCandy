@@ -42,6 +42,36 @@
     XCTAssertEqualObjects(result, ({@[@4, @3, @2, @1];}), @"Map did not receive the original array");
 }
 
+- (void)test_ArrayReduce
+{
+    // Simple adder
+    NSArray *result = [@[@1, @2, @3, @10] rz_reduce:^id(NSNumber *prev, NSNumber *current, NSUInteger idx, NSArray *array) {
+        return @([prev integerValue] + [current integerValue]);
+    } initial:@0];
+    XCTAssertEqualObjects(result, @16, @"Result is not correct - reduce did not add correctly");
+    
+    // Sum the age
+    NSArray *peeps = @[
+       @{
+           @"name" : @"Bob",
+           @"age" : @40
+           },
+       @{
+           @"name" : @"Steve",
+           @"age" : @19
+           },
+       @{
+           @"name" : @"Tiffany",
+           @"age"  : @25
+           }
+    ];
+    
+    result = [peeps rz_reduce:^id(id prev, id current, NSUInteger idx, NSArray *array) {
+        return @( [prev integerValue] + [current[@"age"] integerValue] );
+    } initial:@0];
+    XCTAssertEqualObjects(result, @84, @"Ages did not sum correctly");
+}
+
 - (void)test_ArrayFilter
 {
     NSMutableArray *numbers = [NSMutableArray array];
