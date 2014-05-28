@@ -17,9 +17,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9A31701719365A3C003B58DA"
-               BuildableName = "RZFunctionalContainerTests.xctest"
-               BlueprintName = "RZFunctionalContainerTests"
-               ReferencedContainer = "container:RZFunctionalContainerTests.xcodeproj">
+               BuildableName = "RZArrayCandyTests.xctest"
+               BlueprintName = "RZArrayCandyTests"
+               ReferencedContainer = "container:RZArrayCandyTests.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

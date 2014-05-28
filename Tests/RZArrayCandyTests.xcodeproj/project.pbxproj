@@ -9,20 +9,19 @@
 /* Begin PBXBuildFile section */
 		9A31701A19365A3C003B58DA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A31701919365A3C003B58DA /* XCTest.framework */; };
 		9A31701B19365A3C003B58DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A31700019365A3C003B58DA /* Foundation.framework */; };
-		9A31703619365C4C003B58DA /* RZFunctionalContainerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A31703319365C4C003B58DA /* RZFunctionalContainerTests.m */; };
-		9A31705B193667D5003B58DA /* NSArray+RZFunctionalContainers.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A31705A193667D5003B58DA /* NSArray+RZFunctionalContainers.m */; };
+		9A31703619365C4C003B58DA /* RZArrayCandyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A31703319365C4C003B58DA /* RZArrayCandyTests.m */; };
+		9A3170B9193696FC003B58DA /* NSArray+RZArrayCandy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3170B8193696FC003B58DA /* NSArray+RZArrayCandy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9A31700019365A3C003B58DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		9A31701819365A3C003B58DA /* RZFunctionalContainerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RZFunctionalContainerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A31701819365A3C003B58DA /* RZArrayCandyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RZArrayCandyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A31701919365A3C003B58DA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		9A31703219365C4C003B58DA /* RZFunctionalContainerTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RZFunctionalContainerTests-Info.plist"; sourceTree = "<group>"; };
-		9A31703319365C4C003B58DA /* RZFunctionalContainerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZFunctionalContainerTests.m; sourceTree = "<group>"; };
-		9A31703919365CF6003B58DA /* RZFunctionalContainerTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RZFunctionalContainerTests-Prefix.pch"; sourceTree = "<group>"; };
-		9A317059193667D5003B58DA /* NSArray+RZFunctionalContainers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+RZFunctionalContainers.h"; sourceTree = "<group>"; };
-		9A31705A193667D5003B58DA /* NSArray+RZFunctionalContainers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RZFunctionalContainers.m"; sourceTree = "<group>"; };
-		9A31705C19366B19003B58DA /* RZFunctionalContainers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RZFunctionalContainers.h; sourceTree = "<group>"; };
+		9A31703219365C4C003B58DA /* RZArrayCandy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RZArrayCandy-Info.plist"; sourceTree = "<group>"; };
+		9A31703319365C4C003B58DA /* RZArrayCandyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZArrayCandyTests.m; sourceTree = "<group>"; };
+		9A31703919365CF6003B58DA /* RZArrayCandy-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RZArrayCandy-Prefix.pch"; sourceTree = "<group>"; };
+		9A3170B7193696FC003B58DA /* NSArray+RZArrayCandy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+RZArrayCandy.h"; sourceTree = "<group>"; };
+		9A3170B8193696FC003B58DA /* NSArray+RZArrayCandy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RZArrayCandy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,8 +40,8 @@
 		9A316FF419365A3B003B58DA = {
 			isa = PBXGroup;
 			children = (
-				9A317058193667C9003B58DA /* Classes */,
-				9A31702F19365C4C003B58DA /* RZFunctionalContainerTests */,
+				9A3170B6193696FC003B58DA /* Classes */,
+				9A31702F19365C4C003B58DA /* RZArrayCandyTests */,
 				9A316FFF19365A3C003B58DA /* Frameworks */,
 				9A316FFE19365A3C003B58DA /* Products */,
 			);
@@ -51,7 +50,7 @@
 		9A316FFE19365A3C003B58DA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9A31701819365A3C003B58DA /* RZFunctionalContainerTests.xctest */,
+				9A31701819365A3C003B58DA /* RZArrayCandyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,30 +64,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9A31702F19365C4C003B58DA /* RZFunctionalContainerTests */ = {
+		9A31702F19365C4C003B58DA /* RZArrayCandyTests */ = {
 			isa = PBXGroup;
 			children = (
 				9A31703719365C67003B58DA /* Supporting Files */,
-				9A31703319365C4C003B58DA /* RZFunctionalContainerTests.m */,
+				9A31703319365C4C003B58DA /* RZArrayCandyTests.m */,
 			);
-			path = RZFunctionalContainerTests;
+			path = RZArrayCandyTests;
 			sourceTree = "<group>";
 		};
 		9A31703719365C67003B58DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9A31703219365C4C003B58DA /* RZFunctionalContainerTests-Info.plist */,
-				9A31703919365CF6003B58DA /* RZFunctionalContainerTests-Prefix.pch */,
+				9A31703219365C4C003B58DA /* RZArrayCandy-Info.plist */,
+				9A31703919365CF6003B58DA /* RZArrayCandy-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9A317058193667C9003B58DA /* Classes */ = {
+		9A3170B6193696FC003B58DA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				9A31705C19366B19003B58DA /* RZFunctionalContainers.h */,
-				9A317059193667D5003B58DA /* NSArray+RZFunctionalContainers.h */,
-				9A31705A193667D5003B58DA /* NSArray+RZFunctionalContainers.m */,
+				9A3170B7193696FC003B58DA /* NSArray+RZArrayCandy.h */,
+				9A3170B8193696FC003B58DA /* NSArray+RZArrayCandy.m */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -97,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9A31701719365A3C003B58DA /* RZFunctionalContainerTests */ = {
+		9A31701719365A3C003B58DA /* RZArrayCandyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A31702C19365A3C003B58DA /* Build configuration list for PBXNativeTarget "RZFunctionalContainerTests" */;
+			buildConfigurationList = 9A31702C19365A3C003B58DA /* Build configuration list for PBXNativeTarget "RZArrayCandyTests" */;
 			buildPhases = (
 				9A31701419365A3C003B58DA /* Sources */,
 				9A31701519365A3C003B58DA /* Frameworks */,
@@ -109,9 +107,9 @@
 			);
 			dependencies = (
 			);
-			name = RZFunctionalContainerTests;
+			name = RZArrayCandyTests;
 			productName = RZFunctionalContainersTests;
-			productReference = 9A31701819365A3C003B58DA /* RZFunctionalContainerTests.xctest */;
+			productReference = 9A31701819365A3C003B58DA /* RZArrayCandyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -128,7 +126,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9A316FF819365A3B003B58DA /* Build configuration list for PBXProject "RZFunctionalContainerTests" */;
+			buildConfigurationList = 9A316FF819365A3B003B58DA /* Build configuration list for PBXProject "RZArrayCandyTests" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -140,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9A31701719365A3C003B58DA /* RZFunctionalContainerTests */,
+				9A31701719365A3C003B58DA /* RZArrayCandyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -160,8 +158,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A31705B193667D5003B58DA /* NSArray+RZFunctionalContainers.m in Sources */,
-				9A31703619365C4C003B58DA /* RZFunctionalContainerTests.m in Sources */,
+				9A3170B9193696FC003B58DA /* NSArray+RZArrayCandy.m in Sources */,
+				9A31703619365C4C003B58DA /* RZArrayCandyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +247,10 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RZFunctionalContainerTests/RZFunctionalContainerTests-Prefix.pch";
+				GCC_PREFIX_HEADER = "RZArrayCandyTests/RZArrayCandy-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
-				INFOPLIST_FILE = "RZFunctionalContainerTests/RZFunctionalContainerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "RZArrayCandyTests/RZArrayCandy-Info.plist";
+				PRODUCT_NAME = RZArrayCandyTests;
 				TEST_HOST = "";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -267,9 +265,9 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RZFunctionalContainerTests/RZFunctionalContainerTests-Prefix.pch";
-				INFOPLIST_FILE = "RZFunctionalContainerTests/RZFunctionalContainerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "RZArrayCandyTests/RZArrayCandy-Prefix.pch";
+				INFOPLIST_FILE = "RZArrayCandyTests/RZArrayCandy-Info.plist";
+				PRODUCT_NAME = RZArrayCandyTests;
 				TEST_HOST = "";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -278,7 +276,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9A316FF819365A3B003B58DA /* Build configuration list for PBXProject "RZFunctionalContainerTests" */ = {
+		9A316FF819365A3B003B58DA /* Build configuration list for PBXProject "RZArrayCandyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A31702719365A3C003B58DA /* Debug */,
@@ -287,7 +285,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A31702C19365A3C003B58DA /* Build configuration list for PBXNativeTarget "RZFunctionalContainerTests" */ = {
+		9A31702C19365A3C003B58DA /* Build configuration list for PBXNativeTarget "RZArrayCandyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A31702D19365A3C003B58DA /* Debug */,

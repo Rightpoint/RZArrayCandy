@@ -1,12 +1,12 @@
 //
-//  NSArray+RZFunctionalContainers.m
+//  NSArray+RZArrayCandy.m
 //  RZFunctionalContainerTests
 //
 //  Created by Nick Donaldson on 5/28/14.
 
-#import "NSArray+RZFunctionalContainers.h"
+#import "NSArray+RZArrayCandy.h"
 
-@implementation NSArray (RZFunctionalContainers)
+@implementation NSArray (RZArrayCandy)
 
 - (NSArray *)rz_map:(RZFCArrayObjBlock)block
 {

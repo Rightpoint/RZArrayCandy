@@ -1,21 +1,21 @@
 //
-//  RZFunctionalContainersTests.m
-//  RZFunctionalContainersTests
+//  RZArrayCandyTests.m
+//  RZArrayCandyTests
 //
 //  Created by Nick Donaldson on 5/28/14.
 //  Copyright (c) 2014 Raizlabs. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
-#import "RZFunctionalContainers.h"
+#import "NSArray+RZArrayCandy.h"
 
-@interface RZFunctionalContainersTests : XCTestCase
+@interface RZArrayCandyTests : XCTestCase
 
 @property (nonatomic, strong) NSArray *peeps;
 
 @end
 
-@implementation RZFunctionalContainersTests
+@implementation RZArrayCandyTests
 
 - (void)setUp
 {

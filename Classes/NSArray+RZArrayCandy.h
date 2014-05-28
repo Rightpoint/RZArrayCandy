@@ -1,5 +1,5 @@
 //
-//  NSArray+RZFunctionalContainers.h
+//  NSArray+RZArrayCandy.h
 //  RZFunctionalContainerTests
 //
 //  Created by Nick Donaldson on 5/28/14.
@@ -11,7 +11,7 @@ typedef id   (^RZFCArrayObjBlock)(id obj, NSUInteger idx, NSArray *array);
 typedef id   (^RZFCArrayReduceBlock)(id prev, id current, NSUInteger idx, NSArray *array);
 typedef BOOL (^RZFCArrayBooleanBlock)(id obj, NSUInteger idx, NSArray *array);
 
-@interface NSArray (RZFunctionalContainers)
+@interface NSArray (RZArrayCandy)
 
 /**
  *  Perform a block on each object in the target array and return the results in a new array.
