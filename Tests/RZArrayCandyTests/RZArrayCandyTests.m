@@ -80,7 +80,7 @@
     
     result = [self.peeps rz_reduce:^id(id prev, id current, NSUInteger idx, NSArray *array) {
         return @( [prev integerValue] + [current[@"age"] integerValue] );
-    } initial:@16];
+    } initialValue:@16];
     XCTAssertEqualObjects(result, @100, @"Ages did not sum correctly with initial value");
 }
 

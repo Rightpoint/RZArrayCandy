@@ -48,7 +48,7 @@ typedef BOOL (^RZFCArrayBooleanBlock)(id obj, NSUInteger idx, NSArray *array);
  *
  *  @param block   Block that performs the reduction operation.
  *                     @c prev
- *                     The result from the previous invocation of the block, or the initial
+ *                     The result from the previous invocation of the block, or the initialValue
  *                     value if this is the first invocation.
  *                     @c current
  *                     The object at the current index of the array.
@@ -57,11 +57,11 @@ typedef BOOL (^RZFCArrayBooleanBlock)(id obj, NSUInteger idx, NSArray *array);
  *                     @c array
  *                     The original array.
  *
- *  @param initial Optional initial value for the reduce operation.
+ *  @param initialValue Optional initial value for the reduce operation.
  *
  *  @return Result from performing the reduce operation on all objects in the array.
  */
-- (id)rz_reduce:(RZFCArrayReduceBlock)block initial:(id)initial;
+- (id)rz_reduce:(RZFCArrayReduceBlock)block initialValue:(id)initialValue;
 
 /**
  *  Filter the receiver and return the result.

@@ -35,13 +35,13 @@
 
 - (id)rz_reduce:(RZFCArrayReduceBlock)block
 {
-    return [self rz_reduce:block initial:nil];
+    return [self rz_reduce:block initialValue:nil];
 }
 
-- (id)rz_reduce:(RZFCArrayReduceBlock)block initial:(id)initial
+- (id)rz_reduce:(RZFCArrayReduceBlock)block initialValue:(id)initialValue
 {
     NSParameterAssert(block);
-    __block id accumulator = initial;
+    __block id accumulator = initialValue;
     [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
        accumulator = block( accumulator, obj, idx, self );
     }];
