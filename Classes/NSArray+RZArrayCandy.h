@@ -14,7 +14,7 @@ typedef BOOL (^RZFCArrayBooleanBlock)(id obj, NSUInteger idx, NSArray *array);
 @interface NSArray (RZArrayCandy)
 
 /**
- *  Perform a block on each object in the target array and return the results in a new array.
+ *  Perform a block on each object in the receiver and return the results in a new array.
  *
  *  @param block Block to perform on each object. Receives the current object, 
  *               its index, and the original array. The block should return an
@@ -26,7 +26,7 @@ typedef BOOL (^RZFCArrayBooleanBlock)(id obj, NSUInteger idx, NSArray *array);
 - (NSArray *)rz_map:(RZFCArrayObjBlock)block;
 
 /**
- *  Reduce the objects in the target array to a single value.
+ *  Reduce the objects in the receiver to a single value.
  *
  *  @param block   Block that performs the reduction operation.
  *                     @c prev
@@ -44,7 +44,7 @@ typedef BOOL (^RZFCArrayBooleanBlock)(id obj, NSUInteger idx, NSArray *array);
 - (id)rz_reduce:(RZFCArrayReduceBlock)block;
 
 /**
- *  Reduce the objects in the target array to a single value.
+ *  Reduce the objects in the receiver to a single value.
  *
  *  @param block   Block that performs the reduction operation.
  *                     @c prev
@@ -64,17 +64,17 @@ typedef BOOL (^RZFCArrayBooleanBlock)(id obj, NSUInteger idx, NSArray *array);
 - (id)rz_reduce:(RZFCArrayReduceBlock)block initial:(id)initial;
 
 /**
- *  Filter the target array and return the result.
+ *  Filter the receiver and return the result.
  *
  *  @param block Block that is passed the object, its index, and the original array.
  *               If the block returns NO for an object, it is omitted from the result.
  *
- *  @return A new array that is a filtered version of the target.
+ *  @return A new array that is a filtered version of the receiver.
  */
 - (NSArray *)rz_filter:(RZFCArrayBooleanBlock)block;
 
 /**
- *  Get the value for a keypath on each object in the target array.
+ *  Get the value for a keypath on each object in the receiver.
  *  Syntatic shortcut for @p valueForKeyPath: on an array.
  *
  *  @param keypath The keypath for which to get the value on each object.
@@ -103,16 +103,16 @@ typedef BOOL (^RZFCArrayBooleanBlock)(id obj, NSUInteger idx, NSArray *array);
 - (BOOL)rz_none:(RZFCArrayBooleanBlock)block;
 
 /**
- *  Remove all instances of NSNull in the target array
+ *  Remove all instances of NSNull in the receiver and return the result.
  *
  *  @return A new array without any NSNull instances.
  */
 - (NSArray *)rz_compacted;
 
 /**
- *  Reverse the array and return the result.
+ *  Reverse the contents of the receiver and return the result.
  *
- *  @return A new array that is a reversed version of the target.
+ *  @return A new array that is a reversed version of the receiver.
  */
 - (NSArray *)rz_reversed;
 
