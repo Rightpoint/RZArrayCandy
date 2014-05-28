@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "RZFunctionalContainers.h"
 
 @interface RZFunctionalContainersTests : XCTestCase
 
@@ -14,21 +15,25 @@
 
 @implementation RZFunctionalContainersTests
 
-- (void)setUp
+- (void)test_ArrayMapBasic
 {
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
-
-- (void)tearDown
-{
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
-
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    // test basic map function
+    NSArray *result = [@[@1, @2, @3, @4] rz_map:^id(NSNumber *n, NSUInteger idx) {
+        return @([n integerValue] * 2);
+    }];
+    XCTAssertEqualObjects(result, ({@[@2, @4, @6, @8];}), @"Map did not correctly execute");
+    
+    // test nil result from map block
+    result = [@[@"1", @2, @3, @4] rz_map:^id(id obj, NSUInteger idx) {
+        return [obj isKindOfClass:[NSNumber class]] ? obj : nil;
+    }];
+    XCTAssertEqualObjects(result, ({@[@2, @3, @4];}), @"Map did not correctly exclude nil result");
+    
+    // test index
+    result = [@[@1, @2, @3, @4] rz_map:^id(NSNumber *n, NSUInteger idx) {
+        return @([n integerValue] + idx);
+    }];
+    XCTAssertEqualObjects(result, ({@[@1, @3, @5, @7];}), @"Map did not receive correct indexes");
 }
 
 @end

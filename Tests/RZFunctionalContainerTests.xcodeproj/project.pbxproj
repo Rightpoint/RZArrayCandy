@@ -10,6 +10,7 @@
 		9A31701A19365A3C003B58DA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A31701919365A3C003B58DA /* XCTest.framework */; };
 		9A31701B19365A3C003B58DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A31700019365A3C003B58DA /* Foundation.framework */; };
 		9A31703619365C4C003B58DA /* RZFunctionalContainerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A31703319365C4C003B58DA /* RZFunctionalContainerTests.m */; };
+		9A31705B193667D5003B58DA /* NSArray+RZFunctionalContainers.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A31705A193667D5003B58DA /* NSArray+RZFunctionalContainers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,9 @@
 		9A31703219365C4C003B58DA /* RZFunctionalContainerTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RZFunctionalContainerTests-Info.plist"; sourceTree = "<group>"; };
 		9A31703319365C4C003B58DA /* RZFunctionalContainerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZFunctionalContainerTests.m; sourceTree = "<group>"; };
 		9A31703919365CF6003B58DA /* RZFunctionalContainerTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RZFunctionalContainerTests-Prefix.pch"; sourceTree = "<group>"; };
+		9A317059193667D5003B58DA /* NSArray+RZFunctionalContainers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+RZFunctionalContainers.h"; sourceTree = "<group>"; };
+		9A31705A193667D5003B58DA /* NSArray+RZFunctionalContainers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RZFunctionalContainers.m"; sourceTree = "<group>"; };
+		9A31705C19366B19003B58DA /* RZFunctionalContainers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RZFunctionalContainers.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +41,7 @@
 		9A316FF419365A3B003B58DA = {
 			isa = PBXGroup;
 			children = (
-				9A31703A19365D77003B58DA /* Classes */,
+				9A317058193667C9003B58DA /* Classes */,
 				9A31702F19365C4C003B58DA /* RZFunctionalContainerTests */,
 				9A316FFF19365A3C003B58DA /* Frameworks */,
 				9A316FFE19365A3C003B58DA /* Products */,
@@ -79,11 +83,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9A31703A19365D77003B58DA /* Classes */ = {
+		9A317058193667C9003B58DA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9A31705C19366B19003B58DA /* RZFunctionalContainers.h */,
+				9A317059193667D5003B58DA /* NSArray+RZFunctionalContainers.h */,
+				9A31705A193667D5003B58DA /* NSArray+RZFunctionalContainers.m */,
 			);
-			path = Classes;
+			name = Classes;
+			path = ../Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A31705B193667D5003B58DA /* NSArray+RZFunctionalContainers.m in Sources */,
 				9A31703619365C4C003B58DA /* RZFunctionalContainerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
