@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A31701A19365A3C003B58DA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A31701919365A3C003B58DA /* XCTest.framework */; };
+		9A31701B19365A3C003B58DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A31700019365A3C003B58DA /* Foundation.framework */; };
+		9A31703619365C4C003B58DA /* RZFunctionalContainerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A31703319365C4C003B58DA /* RZFunctionalContainerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9A31700019365A3C003B58DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9A31701819365A3C003B58DA /* RZFunctionalContainerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RZFunctionalContainerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A31701919365A3C003B58DA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9A31703219365C4C003B58DA /* RZFunctionalContainerTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RZFunctionalContainerTests-Info.plist"; sourceTree = "<group>"; };
+		9A31703319365C4C003B58DA /* RZFunctionalContainerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZFunctionalContainerTests.m; sourceTree = "<group>"; };
+		9A31703919365CF6003B58DA /* RZFunctionalContainerTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RZFunctionalContainerTests-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A31701519365A3C003B58DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A31701A19365A3C003B58DA /* XCTest.framework in Frameworks */,
+				9A31701B19365A3C003B58DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A316FF419365A3B003B58DA = {
+			isa = PBXGroup;
+			children = (
+				9A31703A19365D77003B58DA /* Classes */,
+				9A31702F19365C4C003B58DA /* RZFunctionalContainerTests */,
+				9A316FFF19365A3C003B58DA /* Frameworks */,
+				9A316FFE19365A3C003B58DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A316FFE19365A3C003B58DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A31701819365A3C003B58DA /* RZFunctionalContainerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A316FFF19365A3C003B58DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A31700019365A3C003B58DA /* Foundation.framework */,
+				9A31701919365A3C003B58DA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A31702F19365C4C003B58DA /* RZFunctionalContainerTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A31703719365C67003B58DA /* Supporting Files */,
+				9A31703319365C4C003B58DA /* RZFunctionalContainerTests.m */,
+			);
+			path = RZFunctionalContainerTests;
+			sourceTree = "<group>";
+		};
+		9A31703719365C67003B58DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A31703219365C4C003B58DA /* RZFunctionalContainerTests-Info.plist */,
+				9A31703919365CF6003B58DA /* RZFunctionalContainerTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A31703A19365D77003B58DA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A31701719365A3C003B58DA /* RZFunctionalContainerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A31702C19365A3C003B58DA /* Build configuration list for PBXNativeTarget "RZFunctionalContainerTests" */;
+			buildPhases = (
+				9A31701419365A3C003B58DA /* Sources */,
+				9A31701519365A3C003B58DA /* Frameworks */,
+				9A31701619365A3C003B58DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RZFunctionalContainerTests;
+			productName = RZFunctionalContainersTests;
+			productReference = 9A31701819365A3C003B58DA /* RZFunctionalContainerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A316FF519365A3B003B58DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Raizlabs;
+				TargetAttributes = {
+					9A31701719365A3C003B58DA = {
+						TestTargetID = 9A316FFC19365A3C003B58DA;
+					};
+				};
+			};
+			buildConfigurationList = 9A316FF819365A3B003B58DA /* Build configuration list for PBXProject "RZFunctionalContainerTests" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9A316FF419365A3B003B58DA;
+			productRefGroup = 9A316FFE19365A3C003B58DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A31701719365A3C003B58DA /* RZFunctionalContainerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A31701619365A3C003B58DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A31701419365A3C003B58DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A31703619365C4C003B58DA /* RZFunctionalContainerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9A31702719365A3C003B58DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A31702819365A3C003B58DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A31702D19365A3C003B58DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RZFunctionalContainerTests/RZFunctionalContainerTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				INFOPLIST_FILE = "RZFunctionalContainerTests/RZFunctionalContainerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9A31702E19365A3C003B58DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RZFunctionalContainerTests/RZFunctionalContainerTests-Prefix.pch";
+				INFOPLIST_FILE = "RZFunctionalContainerTests/RZFunctionalContainerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A316FF819365A3B003B58DA /* Build configuration list for PBXProject "RZFunctionalContainerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A31702719365A3C003B58DA /* Debug */,
+				9A31702819365A3C003B58DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A31702C19365A3C003B58DA /* Build configuration list for PBXNativeTarget "RZFunctionalContainerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A31702D19365A3C003B58DA /* Debug */,
+				9A31702E19365A3C003B58DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A316FF519365A3B003B58DA /* Project object */;
+}
