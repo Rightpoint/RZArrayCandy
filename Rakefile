@@ -15,6 +15,12 @@ namespace :test do
   
 end
 
+task :test do
+  Rake::Task['test:iOS'].invoke
+  Rake::Task['test:OSX'].invoke
+end
+
+task :default => 'test'
 
 private
 

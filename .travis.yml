@@ -1,8 +1,6 @@
 language: objective-c
 before_install: rake test:install
-script:
-    - rake test:iOS
-    - rake test:OSX
+script: rake test
 notifications:
     email:
         recipients:
