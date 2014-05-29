@@ -9,19 +9,19 @@
 /* Begin PBXBuildFile section */
 		9A31701A19365A3C003B58DA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A31701919365A3C003B58DA /* XCTest.framework */; };
 		9A31701B19365A3C003B58DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A31700019365A3C003B58DA /* Foundation.framework */; };
-		9A31703619365C4C003B58DA /* RZArrayCandyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A31703319365C4C003B58DA /* RZArrayCandyTests.m */; };
 		9A3170B9193696FC003B58DA /* NSArray+RZArrayCandy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3170B8193696FC003B58DA /* NSArray+RZArrayCandy.m */; };
+		9AF9EED7193787F000F659E2 /* RZArrayCandyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF9EED6193787F000F659E2 /* RZArrayCandyTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9A31700019365A3C003B58DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9A31701819365A3C003B58DA /* RZArrayCandyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RZArrayCandyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A31701919365A3C003B58DA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		9A31703219365C4C003B58DA /* RZArrayCandy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RZArrayCandy-Info.plist"; sourceTree = "<group>"; };
-		9A31703319365C4C003B58DA /* RZArrayCandyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZArrayCandyTests.m; sourceTree = "<group>"; };
-		9A31703919365CF6003B58DA /* RZArrayCandy-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RZArrayCandy-Prefix.pch"; sourceTree = "<group>"; };
 		9A3170B7193696FC003B58DA /* NSArray+RZArrayCandy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+RZArrayCandy.h"; sourceTree = "<group>"; };
 		9A3170B8193696FC003B58DA /* NSArray+RZArrayCandy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RZArrayCandy.m"; sourceTree = "<group>"; };
+		9AF9EED6193787F000F659E2 /* RZArrayCandyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZArrayCandyTests.m; sourceTree = "<group>"; };
+		9AF9EED9193787F600F659E2 /* RZArrayCandyTests-iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RZArrayCandyTests-iOS-Info.plist"; sourceTree = "<group>"; };
+		9AF9EEDA193787F600F659E2 /* RZArrayCandyTests-iOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RZArrayCandyTests-iOS-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +41,8 @@
 			isa = PBXGroup;
 			children = (
 				9A3170B6193696FC003B58DA /* Classes */,
-				9A31702F19365C4C003B58DA /* RZArrayCandyTests */,
+				9AF9EED5193787F000F659E2 /* Tests */,
+				9AF9EED8193787F600F659E2 /* RZArrayCandyTests-iOS */,
 				9A316FFF19365A3C003B58DA /* Frameworks */,
 				9A316FFE19365A3C003B58DA /* Products */,
 			);
@@ -64,24 +65,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9A31702F19365C4C003B58DA /* RZArrayCandyTests */ = {
-			isa = PBXGroup;
-			children = (
-				9A31703719365C67003B58DA /* Supporting Files */,
-				9A31703319365C4C003B58DA /* RZArrayCandyTests.m */,
-			);
-			path = RZArrayCandyTests;
-			sourceTree = "<group>";
-		};
-		9A31703719365C67003B58DA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9A31703219365C4C003B58DA /* RZArrayCandy-Info.plist */,
-				9A31703919365CF6003B58DA /* RZArrayCandy-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		9A3170B6193696FC003B58DA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +73,23 @@
 			);
 			name = Classes;
 			path = ../Classes;
+			sourceTree = "<group>";
+		};
+		9AF9EED5193787F000F659E2 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9AF9EED6193787F000F659E2 /* RZArrayCandyTests.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		9AF9EED8193787F600F659E2 /* RZArrayCandyTests-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9AF9EED9193787F600F659E2 /* RZArrayCandyTests-iOS-Info.plist */,
+				9AF9EEDA193787F600F659E2 /* RZArrayCandyTests-iOS-Prefix.pch */,
+			);
+			path = "RZArrayCandyTests-iOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A3170B9193696FC003B58DA /* NSArray+RZArrayCandy.m in Sources */,
-				9A31703619365C4C003B58DA /* RZArrayCandyTests.m in Sources */,
+				9AF9EED7193787F000F659E2 /* RZArrayCandyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,9 +247,9 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RZArrayCandyTests/RZArrayCandy-Prefix.pch";
+				GCC_PREFIX_HEADER = "RZArrayCandyTests-iOS/RZArrayCandyTests-iOS-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
-				INFOPLIST_FILE = "RZArrayCandyTests/RZArrayCandy-Info.plist";
+				INFOPLIST_FILE = "RZArrayCandyTests-iOS/RZArrayCandyTests-iOS-Info.plist";
 				PRODUCT_NAME = RZArrayCandyTests;
 				TEST_HOST = "";
 				WRAPPER_EXTENSION = xctest;
@@ -265,8 +265,8 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RZArrayCandyTests/RZArrayCandy-Prefix.pch";
-				INFOPLIST_FILE = "RZArrayCandyTests/RZArrayCandy-Info.plist";
+				GCC_PREFIX_HEADER = "RZArrayCandyTests-iOS/RZArrayCandyTests-iOS-Prefix.pch";
+				INFOPLIST_FILE = "RZArrayCandyTests-iOS/RZArrayCandyTests-iOS-Info.plist";
 				PRODUCT_NAME = RZArrayCandyTests;
 				TEST_HOST = "";
 				WRAPPER_EXTENSION = xctest;
