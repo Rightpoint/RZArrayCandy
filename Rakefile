@@ -1,4 +1,5 @@
 # Adapted from AFNetworking rakefile
+include FileUtils::Verbose
 
 namespace :test do
   
