@@ -9,19 +9,25 @@
 /* Begin PBXBuildFile section */
 		9A31701A19365A3C003B58DA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A31701919365A3C003B58DA /* XCTest.framework */; };
 		9A31701B19365A3C003B58DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A31700019365A3C003B58DA /* Foundation.framework */; };
-		9A31703619365C4C003B58DA /* RZArrayCandyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A31703319365C4C003B58DA /* RZArrayCandyTests.m */; };
 		9A3170B9193696FC003B58DA /* NSArray+RZArrayCandy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3170B8193696FC003B58DA /* NSArray+RZArrayCandy.m */; };
+		9AF9EED7193787F000F659E2 /* RZArrayCandyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF9EED6193787F000F659E2 /* RZArrayCandyTests.m */; };
+		9AF9EEF3193791F200F659E2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A31701919365A3C003B58DA /* XCTest.framework */; };
+		9AF9EF001937921F00F659E2 /* NSArray+RZArrayCandy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3170B8193696FC003B58DA /* NSArray+RZArrayCandy.m */; };
+		9AF9EF011937921F00F659E2 /* RZArrayCandyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF9EED6193787F000F659E2 /* RZArrayCandyTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9A31700019365A3C003B58DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9A31701819365A3C003B58DA /* RZArrayCandyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RZArrayCandyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A31701919365A3C003B58DA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		9A31703219365C4C003B58DA /* RZArrayCandy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RZArrayCandy-Info.plist"; sourceTree = "<group>"; };
-		9A31703319365C4C003B58DA /* RZArrayCandyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZArrayCandyTests.m; sourceTree = "<group>"; };
-		9A31703919365CF6003B58DA /* RZArrayCandy-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RZArrayCandy-Prefix.pch"; sourceTree = "<group>"; };
 		9A3170B7193696FC003B58DA /* NSArray+RZArrayCandy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+RZArrayCandy.h"; sourceTree = "<group>"; };
 		9A3170B8193696FC003B58DA /* NSArray+RZArrayCandy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RZArrayCandy.m"; sourceTree = "<group>"; };
+		9AF9EED6193787F000F659E2 /* RZArrayCandyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZArrayCandyTests.m; sourceTree = "<group>"; };
+		9AF9EED9193787F600F659E2 /* RZArrayCandyTests-iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RZArrayCandyTests-iOS-Info.plist"; sourceTree = "<group>"; };
+		9AF9EEDA193787F600F659E2 /* RZArrayCandyTests-iOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RZArrayCandyTests-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		9AF9EEF2193791F200F659E2 /* RZArrayCandyTests-OSX.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RZArrayCandyTests-OSX.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AF9EEF6193791F200F659E2 /* RZArrayCandyTests-OSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RZArrayCandyTests-OSX-Info.plist"; sourceTree = "<group>"; };
+		9AF9EEFC193791F200F659E2 /* RZArrayCandyTests-OSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RZArrayCandyTests-OSX-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +40,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9AF9EEEF193791F200F659E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AF9EEF3193791F200F659E2 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,7 +55,9 @@
 			isa = PBXGroup;
 			children = (
 				9A3170B6193696FC003B58DA /* Classes */,
-				9A31702F19365C4C003B58DA /* RZArrayCandyTests */,
+				9AF9EED5193787F000F659E2 /* Tests */,
+				9AF9EED8193787F600F659E2 /* RZArrayCandyTests-iOS */,
+				9AF9EEF4193791F200F659E2 /* RZArrayCandyTests-OSX */,
 				9A316FFF19365A3C003B58DA /* Frameworks */,
 				9A316FFE19365A3C003B58DA /* Products */,
 			);
@@ -51,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				9A31701819365A3C003B58DA /* RZArrayCandyTests.xctest */,
+				9AF9EEF2193791F200F659E2 /* RZArrayCandyTests-OSX.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,24 +81,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9A31702F19365C4C003B58DA /* RZArrayCandyTests */ = {
-			isa = PBXGroup;
-			children = (
-				9A31703719365C67003B58DA /* Supporting Files */,
-				9A31703319365C4C003B58DA /* RZArrayCandyTests.m */,
-			);
-			path = RZArrayCandyTests;
-			sourceTree = "<group>";
-		};
-		9A31703719365C67003B58DA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9A31703219365C4C003B58DA /* RZArrayCandy-Info.plist */,
-				9A31703919365CF6003B58DA /* RZArrayCandy-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		9A3170B6193696FC003B58DA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,12 +91,38 @@
 			path = ../Classes;
 			sourceTree = "<group>";
 		};
+		9AF9EED5193787F000F659E2 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9AF9EED6193787F000F659E2 /* RZArrayCandyTests.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		9AF9EED8193787F600F659E2 /* RZArrayCandyTests-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9AF9EED9193787F600F659E2 /* RZArrayCandyTests-iOS-Info.plist */,
+				9AF9EEDA193787F600F659E2 /* RZArrayCandyTests-iOS-Prefix.pch */,
+			);
+			path = "RZArrayCandyTests-iOS";
+			sourceTree = "<group>";
+		};
+		9AF9EEF4193791F200F659E2 /* RZArrayCandyTests-OSX */ = {
+			isa = PBXGroup;
+			children = (
+				9AF9EEF6193791F200F659E2 /* RZArrayCandyTests-OSX-Info.plist */,
+				9AF9EEFC193791F200F659E2 /* RZArrayCandyTests-OSX-Prefix.pch */,
+			);
+			path = "RZArrayCandyTests-OSX";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9A31701719365A3C003B58DA /* RZArrayCandyTests */ = {
+		9A31701719365A3C003B58DA /* RZArrayCandyTests-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A31702C19365A3C003B58DA /* Build configuration list for PBXNativeTarget "RZArrayCandyTests" */;
+			buildConfigurationList = 9A31702C19365A3C003B58DA /* Build configuration list for PBXNativeTarget "RZArrayCandyTests-iOS" */;
 			buildPhases = (
 				9A31701419365A3C003B58DA /* Sources */,
 				9A31701519365A3C003B58DA /* Frameworks */,
@@ -107,9 +132,26 @@
 			);
 			dependencies = (
 			);
-			name = RZArrayCandyTests;
+			name = "RZArrayCandyTests-iOS";
 			productName = RZFunctionalContainersTests;
 			productReference = 9A31701819365A3C003B58DA /* RZArrayCandyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9AF9EEF1193791F200F659E2 /* RZArrayCandyTests-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AF9EEFD193791F200F659E2 /* Build configuration list for PBXNativeTarget "RZArrayCandyTests-OSX" */;
+			buildPhases = (
+				9AF9EEEE193791F200F659E2 /* Sources */,
+				9AF9EEEF193791F200F659E2 /* Frameworks */,
+				9AF9EEF0193791F200F659E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RZArrayCandyTests-OSX";
+			productName = "RZArrayCandyTests-OSX";
+			productReference = 9AF9EEF2193791F200F659E2 /* RZArrayCandyTests-OSX.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -138,13 +180,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9A31701719365A3C003B58DA /* RZArrayCandyTests */,
+				9A31701719365A3C003B58DA /* RZArrayCandyTests-iOS */,
+				9AF9EEF1193791F200F659E2 /* RZArrayCandyTests-OSX */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9A31701619365A3C003B58DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AF9EEF0193791F200F659E2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -159,7 +209,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A3170B9193696FC003B58DA /* NSArray+RZArrayCandy.m in Sources */,
-				9A31703619365C4C003B58DA /* RZArrayCandyTests.m in Sources */,
+				9AF9EED7193787F000F659E2 /* RZArrayCandyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AF9EEEE193791F200F659E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AF9EF001937921F00F659E2 /* NSArray+RZArrayCandy.m in Sources */,
+				9AF9EF011937921F00F659E2 /* RZArrayCandyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,9 +306,9 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RZArrayCandyTests/RZArrayCandy-Prefix.pch";
+				GCC_PREFIX_HEADER = "RZArrayCandyTests-iOS/RZArrayCandyTests-iOS-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
-				INFOPLIST_FILE = "RZArrayCandyTests/RZArrayCandy-Info.plist";
+				INFOPLIST_FILE = "RZArrayCandyTests-iOS/RZArrayCandyTests-iOS-Info.plist";
 				PRODUCT_NAME = RZArrayCandyTests;
 				TEST_HOST = "";
 				WRAPPER_EXTENSION = xctest;
@@ -265,10 +324,51 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RZArrayCandyTests/RZArrayCandy-Prefix.pch";
-				INFOPLIST_FILE = "RZArrayCandyTests/RZArrayCandy-Info.plist";
+				GCC_PREFIX_HEADER = "RZArrayCandyTests-iOS/RZArrayCandyTests-iOS-Prefix.pch";
+				INFOPLIST_FILE = "RZArrayCandyTests-iOS/RZArrayCandyTests-iOS-Info.plist";
 				PRODUCT_NAME = RZArrayCandyTests;
 				TEST_HOST = "";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		9AF9EEFE193791F200F659E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RZArrayCandyTests-OSX/RZArrayCandyTests-OSX-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RZArrayCandyTests-OSX/RZArrayCandyTests-OSX-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9AF9EEFF193791F200F659E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RZArrayCandyTests-OSX/RZArrayCandyTests-OSX-Prefix.pch";
+				INFOPLIST_FILE = "RZArrayCandyTests-OSX/RZArrayCandyTests-OSX-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -285,7 +385,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A31702C19365A3C003B58DA /* Build configuration list for PBXNativeTarget "RZArrayCandyTests" */ = {
+		9A31702C19365A3C003B58DA /* Build configuration list for PBXNativeTarget "RZArrayCandyTests-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A31702D19365A3C003B58DA /* Debug */,
@@ -293,6 +393,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		9AF9EEFD193791F200F659E2 /* Build configuration list for PBXNativeTarget "RZArrayCandyTests-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AF9EEFE193791F200F659E2 /* Debug */,
+				9AF9EEFF193791F200F659E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

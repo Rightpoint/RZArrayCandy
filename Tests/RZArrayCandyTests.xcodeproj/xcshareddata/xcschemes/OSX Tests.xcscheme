@@ -7,13 +7,16 @@
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
+            buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForTesting = "YES">
+            buildForProfiling = "YES"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9A31701719365A3C003B58DA"
-               BuildableName = "RZArrayCandyTests.xctest"
-               BlueprintName = "RZArrayCandyTests"
+               BlueprintIdentifier = "9AF9EEF1193791F200F659E2"
+               BuildableName = "RZArrayCandyTests-OSX.xctest"
+               BlueprintName = "RZArrayCandyTests-OSX"
                ReferencedContainer = "container:RZArrayCandyTests.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9A31701719365A3C003B58DA"
-               BuildableName = "RZArrayCandyTests.xctest"
-               BlueprintName = "RZArrayCandyTests"
+               BlueprintIdentifier = "9AF9EEF1193791F200F659E2"
+               BuildableName = "RZArrayCandyTests-OSX.xctest"
+               BlueprintName = "RZArrayCandyTests-OSX"
                ReferencedContainer = "container:RZArrayCandyTests.xcodeproj">
             </BuildableReference>
          </TestableReference>
