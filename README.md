@@ -33,7 +33,7 @@ Reduce the objects in an array to a single value.
     NSArray *result = [@[@1, @2, @3, @10] rz_reduce:^id(NSNumber *prev, NSNumber *current, NSUInteger idx, NSArray *array) {
     return @([prev integerValue] + [current integerValue]);
 }];
-// result = @16
+// result == @16
 ```
 
 #### `rz_filter:`
@@ -42,5 +42,5 @@ Reduce the objects in an array to a single value.
 NSArray *result = [@[@1, @2, @3, @4, @5] rz_filter:^BOOL(NSNumber *n, NSUInteger idx, NSArray *array) {
     return ([n integerValue] >= 3);
 }];
-// result = @[@3, @4, @5]
+// result == @[@3, @4, @5]
 ```
