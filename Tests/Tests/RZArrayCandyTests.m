@@ -76,7 +76,7 @@
 - (void)test_ArrayReduce
 {
     // Simple adder
-    NSArray *result = [@[@1, @2, @3, @10] rz_reduce:^id(NSNumber *prev, NSNumber *current, NSUInteger idx, NSArray *array) {
+    NSNumber *result = [@[@1, @2, @3, @10] rz_reduce:^id(NSNumber *prev, NSNumber *current, NSUInteger idx, NSArray *array) {
         return @([prev integerValue] + [current integerValue]);
     }];
     XCTAssertEqualObjects(result, @16, @"Result is not correct - reduce did not add correctly");
