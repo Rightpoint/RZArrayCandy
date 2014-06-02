@@ -24,20 +24,23 @@
        @{
            @"name" : @"Bob",
            @"age" : @40,
+           @"gender" : @"M",
            @"pet" : @{
-                   @"name" : @"Rover"
+                @"name" : @"Rover"
            }
         },
        @{
            @"name" : @"Steve",
            @"age" : @19,
+           @"gender" : @"M",
            @"pet" : @{
-                   @"name" : @"Dumbledore"
+                @"name" : @"Dumbledore"
            }
         },
        @{
            @"name" : @"Tiffany",
-           @"age"  : @25
+           @"age"  : @25,
+           @"gender" : @"F"
         }
     ];
     self.peeps = peeps;
@@ -105,6 +108,16 @@
         XCTAssertEqualObjects(result[0][@"name"], @"Bob", @"Wrong name in results");
         XCTAssertEqualObjects(result[1][@"name"], @"Tiffany", @"Wrong name in results");
     }
+}
+
+- (void)test_ArraySort
+{
+    // Sort by age
+    NSArray *peepsByAge = [self.peeps rz_sort:@"age" ascending:YES];
+    XCTAssert(peepsByAge.count == 3, @"Lost someone in the sort");
+    XCTAssertEqualObjects([peepsByAge[0] objectForKey:@"name"], @"Steve", @"Wrong order");
+    XCTAssertEqualObjects([peepsByAge[1] objectForKey:@"name"], @"Tiffany", @"Wrong order");
+    XCTAssertEqualObjects([peepsByAge[2] objectForKey:@"name"], @"Bob", @"Wrong order");
 }
 
 - (void)test_ArrayPick

@@ -74,6 +74,20 @@ typedef BOOL (^RZFCArrayBooleanBlock)(id obj, NSUInteger idx, NSArray *array);
 - (NSArray *)rz_filter:(RZFCArrayBooleanBlock)block;
 
 /**
+ *  Sort the receiver and return the result.
+ *
+ *  @warning Intended for syntactically simpler single-keypath sorts. If you need
+ *  to sort on multiple keypaths, you must use multiple descriptors; calling this
+ *  twice will re-sort the entire array.
+ * 
+ *  @param keypath The keypath on which to sort.
+ *  @param ascending YES if the sort is ascending, NO if descending.
+ *
+ *  @return A new array that is a sorted version of the receiver.
+ */
+- (NSArray *)rz_sort:(NSString *)keypath ascending:(BOOL)ascending;
+
+/**
  *  Get the value for a keypath on each object in the receiver.
  *  Syntatic shortcut for @p valueForKeyPath: on an array.
  *
