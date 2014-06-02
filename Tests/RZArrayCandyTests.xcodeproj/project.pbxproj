@@ -10,10 +10,10 @@
 		9A31701A19365A3C003B58DA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A31701919365A3C003B58DA /* XCTest.framework */; };
 		9A31701B19365A3C003B58DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A31700019365A3C003B58DA /* Foundation.framework */; };
 		9A3170B9193696FC003B58DA /* NSArray+RZArrayCandy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3170B8193696FC003B58DA /* NSArray+RZArrayCandy.m */; };
-		9AF9EED7193787F000F659E2 /* RZArrayCandyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF9EED6193787F000F659E2 /* RZArrayCandyTests.m */; };
+		9A44FB9B193CC58800CE77B8 /* RZArrayCandyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF9EED6193787F000F659E2 /* RZArrayCandyTests.m */; };
+		9A44FB9C193CC59400CE77B8 /* RZArrayCandyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF9EED6193787F000F659E2 /* RZArrayCandyTests.m */; };
 		9AF9EEF3193791F200F659E2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A31701919365A3C003B58DA /* XCTest.framework */; };
 		9AF9EF001937921F00F659E2 /* NSArray+RZArrayCandy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3170B8193696FC003B58DA /* NSArray+RZArrayCandy.m */; };
-		9AF9EF011937921F00F659E2 /* RZArrayCandyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF9EED6193787F000F659E2 /* RZArrayCandyTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -209,7 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A3170B9193696FC003B58DA /* NSArray+RZArrayCandy.m in Sources */,
-				9AF9EED7193787F000F659E2 /* RZArrayCandyTests.m in Sources */,
+				9A44FB9B193CC58800CE77B8 /* RZArrayCandyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AF9EF001937921F00F659E2 /* NSArray+RZArrayCandy.m in Sources */,
-				9AF9EF011937921F00F659E2 /* RZArrayCandyTests.m in Sources */,
+				9A44FB9C193CC59400CE77B8 /* RZArrayCandyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +401,7 @@
 				9AF9EEFF193791F200F659E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

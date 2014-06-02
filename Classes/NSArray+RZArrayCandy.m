@@ -33,6 +33,12 @@
     return [NSArray arrayWithArray:filtered];
 }
 
+- (NSArray *)rz_sort:(NSString *)keypath ascending:(BOOL)ascending
+{
+    NSParameterAssert(keypath);
+    return [self sortedArrayUsingDescriptors:@[ [NSSortDescriptor sortDescriptorWithKey:keypath ascending:ascending] ]];
+}
+
 - (id)rz_reduce:(RZFCArrayReduceBlock)block
 {
     return [self rz_reduce:block initialValue:nil];
